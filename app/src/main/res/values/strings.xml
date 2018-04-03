@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroidRTC</string>
+    <string name="host">30.55.178.125</string>
+    <string name="port">3000</string>
+    <string name="action_settings">Options</string>
+    <string name="dialog_calling">%1$s is calling ……</string>
+    <string name="dialog_answer">Answer</string>
+    <string name="dialog_hangup">Hangup</string>
+</resources>

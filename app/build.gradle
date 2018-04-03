@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+
+    defaultConfig {
+        applicationId "fr.pchab.androidrtc"
+        minSdkVersion 20
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    android {
+        lintOptions {
+            abortOnError false
+        }
+    }
+    sourceSets.main {
+        jniLibs.srcDir 'libs'
+        jni.srcDirs = [] //disable automatic ndk-build call
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:22.0.0'
+    compile 'com.github.nkzawa:socket.io-client:0.4.2'
+    compile files('libs/audio_device_java.jar')
+    compile files('libs/autobanh.jar')
+    compile files('libs/base_java.jar')
+    compile files('libs/libjingle_peerconnection.jar')
+}
