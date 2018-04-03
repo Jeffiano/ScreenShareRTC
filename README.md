@@ -4,7 +4,7 @@
 
 An Android client for [ProjectRTC](https://github.com/pchab/ProjectRTC).
 
-It is designed to demonstrate WebRTC video calls between androids and/or desktop browsers.
+It is designed to demonstrate WebRTC screen share between androids and/or desktop browsers.
 
 ## How To
 
