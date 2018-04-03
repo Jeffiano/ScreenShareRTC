@@ -29,7 +29,7 @@ public class RtcActivity extends Activity implements WebRtcClient.RtcListener {
     private static Intent mMediaProjectionPermissionResultData;
     private static int mMediaProjectionPermissionResultCode;
 
-    public static String STREAM_NAME_PREFIX = "sunmi_device_stream";
+    public static String STREAM_NAME_PREFIX = "android_device_stream";
     // List of mandatory application permissions.／
     private static final String[] MANDATORY_PERMISSIONS = {"android.permission.MODIFY_AUDIO_SETTINGS",
             "android.permission.RECORD_AUDIO", "android.permission.INTERNET"};
